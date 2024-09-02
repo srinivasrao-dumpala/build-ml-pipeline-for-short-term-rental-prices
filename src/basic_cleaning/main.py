@@ -31,8 +31,8 @@ def go(args):
     # Price range modification
     price_range_index = df['price'].between(int(args.min_price), int(args.max_price))
     df = df[price_range_index].copy()
-    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
-    df = df[idx].copy()
+    #idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    #df = df[idx].copy()
     df = df.drop_duplicates().reset_index(drop=True)
 
     #Temporary File
