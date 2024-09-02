@@ -18,6 +18,17 @@ Below are the detail tool set to produce ML Work-flow
 
 The Weights& Biases experiments whihc collexts all experiment in [nyc_airnbn](https://wandb.ai/dsri238-s-p-global/nyc_airbnb?nw=nwuserdsri238)
 
+### Project Links
+```
+Weights & Biases project link: https://wandb.ai/dsri238-s-p-global/nyc_airbnb?nw=nwuserdsri238
+
+Github repository link: https://github.com/srinivasrao-dumpala/build-ml-pipeline-for-short-term-rental-prices
+```
+
+## Linage of End-to-End Workflow
+
+
+
 ## Table of contents
 
 - [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
@@ -45,18 +56,18 @@ The Weights& Biases experiments whihc collexts all experiment in [nyc_airnbn](ht
 
 ## Preliminary steps
 ### Fork the Starter kit
-Go to [https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices.git](https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices.git)
+Go to [https://github.com/udacity/nd0821-c2-build-model-workflow-starter](https://github.com/udacity/nd0821-c2-build-model-workflow-starter)
 and click on `Fork` in the upper right corner. This will create a fork in your Github account, i.e., a copy of the
 repository that is under your control. Now clone the repository locally so you can start working on it:
 
 ```
-git clone https://github.com/[your github username]/build-ml-pipeline-for-short-term-rental-prices.git
+git clone https://github.com/[your github username]/nd0821-c2-build-model-workflow-starter.git
 ```
 
 and go into the repository:
 
 ```
-cd build-ml-pipeline-for-short-term-rental-prices
+cd nd0821-c2-build-model-workflow-starter
 ```
 Commit and push to the repository often while you make progress towards the solution. Remember 
 to add meaningful commit messages.
@@ -181,11 +192,11 @@ _ = mlflow.run(
             )
 ```
 where `config['main']['components_repository']` is set to 
-[https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices#components](https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices/tree/main/components).
+[https://github.com/udacity/nd0821-c2-build-model-workflow-starter#components](https://github.com/udacity/nd0821-c2-build-model-workflow-starter/tree/master/components).
 You can see the parameters that they require by looking into their `MLproject` file:
 
-- `get_data`: downloads the data. [MLproject](https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices/blob/main/components/get_data/MLproject)
-- `train_val_test_split`: segrgate the data (splits the data) [MLproject](https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices/blob/main/components/train_val_test_split/MLproject)
+- `get_data`: downloads the data. [MLproject](https://github.com/udacity/nd0821-c2-build-model-workflow-starter/blob/master/components/get_data/MLproject)
+- `train_val_test_split`: segrgate the data (splits the data) [MLproject](https://github.com/udacity/nd0821-c2-build-model-workflow-starter/blob/master/components/train_val_test_split/MLproject)
 
 ## In case of errors
 When you make an error writing your `conda.yml` file, you might end up with an environment for the pipeline or one
@@ -262,12 +273,13 @@ notebook can be understood by other people like your colleagues
     Note that we use ``save_code=True`` in the call to ``wandb.init`` so the notebook is uploaded and versioned
     by W&B.
 
-4. Using `pandas-profiling`, create a profile:
+4. Using `ydata-profiling`, create a profile:
+   ipywidgets needs to be installed in order to work the ydata_profiling.
    ```python
-   import pandas_profiling
+   import ydata_profiling
    
-   profile = pandas_profiling.ProfileReport(df)
-   profile.to_widgets()
+   profile = ydata_profiling.ProfileReport(df)
+   profile.to_notebook_iframe()
    ```
    what do you notice? Look around and see what you can find. 
    
@@ -276,7 +288,7 @@ notebook can be understood by other people like your colleagues
    some very high prices. After talking to your stakeholders, you decide to consider from a minimum of $ 10 to a 
    maximum of $ 350 per night.
    
-5. Fix some of the little problems we have found in the data with the following code:
+6. Fix some of the little problems we have found in the data with the following code:
     
    ```python
    # Drop outliers
@@ -289,9 +301,9 @@ notebook can be understood by other people like your colleagues
    ```
    Note how we did not impute missing values. We will do that in the inference pipeline, so we will be able to handle
    missing values also in production.
-6. Create a new profile or check with ``df.info()`` that all obvious problems have been solved
-7. Terminate the run by running `run.finish()`
-8. Save the notebook, then close it (File -> Close and Halt). In the main Jupyter notebook page, click Quit in the
+7. Create a new profile or check with ``df.info()`` that all obvious problems have been solved
+8. Terminate the run by running `run.finish()`
+9. Save the notebook, then close it (File -> Close and Halt). In the main Jupyter notebook page, click Quit in the
    upper right to stop Jupyter. This will also terminate the mlflow run. DO NOT USE CRTL-C
 
 ## Data cleaning
@@ -352,11 +364,10 @@ with the cleaned data:
                     so we must add it to ``conda.yml`` file, including a version:
    ```yaml
    dependencies:
-     - pip=23.3.1
-     - pandas=2.1.3
+     - pip=20.3.3
+     - pandas=1.2.3
      - pip:
-         - mlflow==2.8.1
-         - wandb==0.16.0
+         - wandb==0.10.31
    ```
    
 4. Add the ``basic_cleaning`` step to the pipeline (the ``main.py`` file):
@@ -449,7 +460,7 @@ Add it to the pipeline then run the pipeline. As usual, use the configuration fo
 **_HINT_**: The path to the step can
 be expressed as ``mlflow.run(f"{config['main']['components_repository']}/train_val_test_split", ...)``.
 
-You can see the parameters accepted by this step [here](https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices/blob/main/components/train_val_test_split/MLproject)
+You can see the parameters accepted by this step [here](https://github.com/udacity/nd0821-c2-build-model-workflow-starter/blob/master/components/train_val_test_split/MLproject)
 
 After you execute, you will see something like:
 
@@ -516,7 +527,7 @@ Go to the artifact section of the selected job, and select the
 ### Test
 Use the provided step ``test_regression_model`` to test your production model against the
 test set. Implement the call to this component in the `main.py` file. As usual you can see the parameters in the
-corresponding [MLproject](https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices/blob/main/components/test_regression_model/MLproject) 
+corresponding [MLproject](https://github.com/udacity/nd0821-c2-build-model-workflow-starter/blob/master/components/test_regression_model/MLproject) 
 file. Use the artifact `random_forest_export:prod` for the parameter `mlflow_model` and the test artifact
 `test_data.csv:latest` as `test_artifact`.
 
@@ -552,7 +563,7 @@ train the model on a new sample of data that our company received (``sample2.csv
 
 (be ready for a surprise, keep reading even if the command fails)
 ```bash
-> mlflow run https://github.com/[your github username]/build-ml-pipeline-for-short-term-rental-prices.git \
+> mlflow run https://github.com/[your github username]/nd0821-c2-build-model-workflow-starter.git \
              -v [the version you want to use, like 1.0.0] \
              -P hydra_options="etl.sample='sample2.csv'"
 ```
