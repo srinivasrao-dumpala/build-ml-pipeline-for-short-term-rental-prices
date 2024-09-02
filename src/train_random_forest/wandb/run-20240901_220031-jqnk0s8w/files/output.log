@@ -1,0 +1,13 @@
+2024-09-01 22:00:33,789 Minimum price: 10, Maximum price: 350
+2024-09-01 22:00:33,802 Preparing sklearn pipeline
+2024-09-01 22:00:33,802 Fitting
+2024-09-01 22:00:34,551 Scoring
+2024-09-01 22:00:34,619 Score: 0.5519152667668663
+2024-09-01 22:00:34,619 MAE: 34.12760059704365
+2024-09-01 22:00:34,619 Exporting model
+Traceback (most recent call last):
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 312, in <module>
+    go(args)
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 111, in go
+    with tempfile.TemporaryDirectory() as temp_dir:
+NameError: name 'tempfile' is not defined

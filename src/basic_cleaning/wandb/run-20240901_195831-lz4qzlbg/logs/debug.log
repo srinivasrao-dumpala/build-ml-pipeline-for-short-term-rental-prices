@@ -1,0 +1,111 @@
+2024-09-01 19:58:31,748 INFO    MainThread:12816 [wandb_setup.py:_flush():69] setting env: {'project': 'nyc_airbnb', 'run_group': 'development'}
+2024-09-01 19:58:31,748 INFO    MainThread:12816 [wandb_setup.py:_flush():69] setting login settings: {}
+2024-09-01 19:58:31,748 INFO    MainThread:12816 [wandb_init.py:_log_setup():336] Logging user logs to /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20240901_195831-lz4qzlbg/logs/debug.log
+2024-09-01 19:58:31,748 INFO    MainThread:12816 [wandb_init.py:_log_setup():337] Logging internal logs to /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20240901_195831-lz4qzlbg/logs/debug-internal.log
+2024-09-01 19:58:31,748 INFO    MainThread:12816 [wandb_init.py:init():369] calling init triggers
+2024-09-01 19:58:31,748 INFO    MainThread:12816 [wandb_init.py:init():374] wandb.init called with sweep_config: {}
+config: {}
+2024-09-01 19:58:31,748 INFO    MainThread:12816 [wandb_init.py:init():418] starting backend
+2024-09-01 19:58:31,748 INFO    MainThread:12816 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-09-01 19:58:31,761 INFO    MainThread:12816 [backend.py:ensure_launched():132] starting backend process...
+2024-09-01 19:58:31,766 INFO    MainThread:12816 [backend.py:ensure_launched():136] started backend process with pid: 12831
+2024-09-01 19:58:31,767 INFO    MainThread:12816 [wandb_init.py:init():423] backend started and connected
+2024-09-01 19:58:31,769 INFO    MainThread:12816 [wandb_init.py:init():465] updated telemetry
+2024-09-01 19:58:31,769 INFO    MainThread:12816 [wandb_init.py:init():484] communicating current version
+2024-09-01 19:58:32,204 INFO    MainThread:12816 [wandb_init.py:init():489] got version response upgrade_message: "wandb version 0.17.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-09-01 19:58:32,204 INFO    MainThread:12816 [wandb_init.py:init():497] communicating run to backend with 30 second timeout
+2024-09-01 19:58:34,611 INFO    MainThread:12816 [wandb_init.py:init():522] starting run threads in backend
+2024-09-01 19:58:35,100 INFO    MainThread:12816 [wandb_run.py:_console_start():1538] atexit reg
+2024-09-01 19:58:35,101 INFO    MainThread:12816 [wandb_run.py:_redirect():1412] redirect: SettingsConsole.REDIRECT
+2024-09-01 19:58:35,101 INFO    MainThread:12816 [wandb_run.py:_redirect():1417] Redirecting console.
+2024-09-01 19:58:35,102 INFO    MainThread:12816 [wandb_run.py:_redirect():1473] Redirects installed.
+2024-09-01 19:58:35,102 INFO    MainThread:12816 [wandb_init.py:init():547] run started, returning control to user process
+2024-09-01 19:58:35,102 INFO    MainThread:12816 [wandb_run.py:_config_callback():787] config_cb None None {'input_artifact': 'sample.csv:latest', 'output_artifact': 'clean_sample.csv', 'output_type': 'clean_sample Data', 'output_description': ' Bsaic Cleaning from sample data', 'min_price': '10', 'max_price': '350'}
+2024-09-01 19:58:36,163 INFO    MainThread:12816 [wandb_run.py:_atexit_cleanup():1508] got exitcode: 0
+2024-09-01 19:58:36,163 INFO    MainThread:12816 [wandb_run.py:_restore():1480] restore
+2024-09-01 19:58:38,642 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: file_counts {
+  wandb_count: 1
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2790411
+  total_bytes: 2790411
+}
+
+2024-09-01 19:58:38,849 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: file_counts {
+  wandb_count: 1
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2790411
+  total_bytes: 2790411
+}
+
+2024-09-01 19:58:39,655 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: file_counts {
+  wandb_count: 6
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2790411
+  total_bytes: 2793297
+}
+
+2024-09-01 19:58:39,792 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: file_counts {
+  wandb_count: 6
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2790411
+  total_bytes: 2793297
+}
+
+2024-09-01 19:58:39,898 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: file_counts {
+  wandb_count: 6
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2793030
+  total_bytes: 2793297
+}
+
+2024-09-01 19:58:40,007 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: file_counts {
+  wandb_count: 6
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2793297
+  total_bytes: 2793297
+}
+
+2024-09-01 19:58:40,116 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: file_counts {
+  wandb_count: 6
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2793297
+  total_bytes: 2793297
+}
+
+2024-09-01 19:58:40,223 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: file_counts {
+  wandb_count: 6
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2793297
+  total_bytes: 2793297
+}
+
+2024-09-01 19:58:40,332 INFO    MainThread:12816 [wandb_run.py:_wait_for_finish():1630] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2793297
+  total_bytes: 2793297
+}
+
+2024-09-01 19:58:41,385 INFO    MainThread:12816 [wandb_run.py:_show_files():1852] logging synced files

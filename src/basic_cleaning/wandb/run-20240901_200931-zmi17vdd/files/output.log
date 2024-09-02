@@ -1,0 +1,4 @@
+2024-09-01 20:09:32,280 Downloading the input artifact sample.csv:latest
+2024-09-01 20:09:32,839 cleaning raw dataset
+2024-09-01 20:09:32,950 Cleaning is completed and logging artifact clean_sample.csv
+2024-09-01 20:09:33,055 Artifact is logged for job basic_cleaning

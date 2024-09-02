@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/863e862e151a4c13a1519f2201d08eaf/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 863e862e151a4c13a1519f2201d08eaf
+run_name: abrasive-fox-392
+run_uuid: 863e862e151a4c13a1519f2201d08eaf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725236754663
+status: 1
+tags: []
+user_id: swathilakhinana

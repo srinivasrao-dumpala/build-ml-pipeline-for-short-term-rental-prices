@@ -1,0 +1,60 @@
+{
+    "os": "macOS-14.6.1-x86_64-i386-64bit",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-09-02T02:04:58.203922",
+    "startedAt": "2024-09-02T02:04:57.730689",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--trainval_artifact",
+        "trainval_data.csv:latest",
+        "--val_size",
+        "0.2",
+        "--random_seed",
+        "42",
+        "--stratify_by",
+        "neighbourhood_group",
+        "--rf_config",
+        "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/outputs/2024-09-01/22-04-54/rf_config.json",
+        "--max_tfidf_features",
+        "5",
+        "--output_artifact",
+        "random_forest_export"
+    ],
+    "state": "running",
+    "program": "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "src/train_random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices.git",
+        "commit": "3e57919f7c98506024ba400fcde4d87f5a94b9b0"
+    },
+    "email": null,
+    "root": "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices",
+    "host": "Swathis-MacBook-Air.local",
+    "username": "swathilakhinana",
+    "executable": "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 9.560897827148438
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

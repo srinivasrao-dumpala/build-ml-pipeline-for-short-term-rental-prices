@@ -1,0 +1,588 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 20000 entries, 0 to 19999
+Data columns (total 16 columns):
+ #   Column                          Non-Null Count  Dtype
+---  ------                          --------------  -----
+ 0   id                              20000 non-null  int64
+ 1   name                            19993 non-null  object
+ 2   host_id                         20000 non-null  int64
+ 3   host_name                       19992 non-null  object
+ 4   neighbourhood_group             20000 non-null  object
+ 5   neighbourhood                   20000 non-null  object
+ 6   latitude                        20000 non-null  float64
+ 7   longitude                       20000 non-null  float64
+ 8   room_type                       20000 non-null  object
+ 9   price                           20000 non-null  int64
+ 10  minimum_nights                  20000 non-null  int64
+ 11  number_of_reviews               20000 non-null  int64
+ 12  last_review                     15877 non-null  object
+ 13  reviews_per_month               15877 non-null  float64
+ 14  calculated_host_listings_count  20000 non-null  int64
+ 15  availability_365                20000 non-null  int64
+dtypes: float64(3), int64(7), object(6)
+memory usage: 2.4+ MB
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/3381786808.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/3381786808.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+['__abstractmethods__', '__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__sklearn_clone__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_build_request_for_signature', '_check_feature_names', '_check_n_features', '_check_refit_for_multimetric', '_doc_link_module', '_doc_link_template', '_doc_link_url_param_generator', '_estimator_type', '_format_results', '_get_default_requests', '_get_doc_link', '_get_metadata_request', '_get_param_names', '_get_routed_params_for_fit', '_get_scorers', '_get_tags', '_more_tags', '_parameter_constraints', '_repr_html_', '_repr_html_inner', '_repr_mimebundle_', '_required_parameters', '_run_search', '_select_best_index', '_sk_visual_block_', '_validate_data', '_validate_params', 'classes_', 'cv', 'decision_function', 'error_score', 'estimator', 'fit', 'get_metadata_routing', 'get_params', 'inverse_transform', 'n_features_in_', 'n_jobs', 'param_grid', 'pre_dispatch', 'predict', 'predict_log_proba', 'predict_proba', 'refit', 'return_train_score', 'score', 'score_samples', 'scoring', 'set_params', 'transform', 'verbose']
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/2808281520.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/2175684687.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+['__abstractmethods__', '__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__sklearn_clone__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_build_request_for_signature', '_check_feature_names', '_check_n_features', '_check_refit_for_multimetric', '_doc_link_module', '_doc_link_template', '_doc_link_url_param_generator', '_estimator_type', '_format_results', '_get_default_requests', '_get_doc_link', '_get_metadata_request', '_get_param_names', '_get_routed_params_for_fit', '_get_scorers', '_get_tags', '_more_tags', '_parameter_constraints', '_repr_html_', '_repr_html_inner', '_repr_mimebundle_', '_required_parameters', '_run_search', '_select_best_index', '_sk_visual_block_', '_validate_data', '_validate_params', 'classes_', 'cv', 'decision_function', 'error_score', 'estimator', 'fit', 'get_metadata_routing', 'get_params', 'inverse_transform', 'n_features_in_', 'n_jobs', 'param_grid', 'pre_dispatch', 'predict', 'predict_log_proba', 'predict_proba', 'refit', 'return_train_score', 'score', 'score_samples', 'scoring', 'set_params', 'transform', 'verbose']
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/2673505037.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+['__abstractmethods__', '__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__sklearn_clone__', '__sklearn_is_fitted__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_build_request_for_signature', '_can_fit_transform', '_can_inverse_transform', '_can_transform', '_check_feature_names', '_check_method_params', '_check_n_features', '_doc_link_module', '_doc_link_template', '_doc_link_url_param_generator', '_estimator_type', '_final_estimator', '_fit', '_get_default_requests', '_get_doc_link', '_get_metadata_request', '_get_param_names', '_get_params', '_get_tags', '_iter', '_log_message', '_more_tags', '_parameter_constraints', '_replace_estimator', '_repr_html_', '_repr_html_inner', '_repr_mimebundle_', '_required_parameters', '_set_params', '_sk_visual_block_', '_validate_data', '_validate_names', '_validate_params', '_validate_steps', 'classes_', 'decision_function', 'feature_names_in_', 'fit', 'fit_predict', 'fit_transform', 'get_feature_names_out', 'get_metadata_routing', 'get_params', 'inverse_transform', 'memory', 'n_features_in_', 'named_steps', 'predict', 'predict_log_proba', 'predict_proba', 'score', 'score_samples', 'set_output', 'set_params', 'set_score_request', 'steps', 'transform', 'verbose']
+['__abstractmethods__', '__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__sklearn_clone__', '__sklearn_is_fitted__', '__str__', '__subclasshook__', '__weakref__', '_abc_impl', '_build_request_for_signature', '_can_fit_transform', '_can_inverse_transform', '_can_transform', '_check_feature_names', '_check_method_params', '_check_n_features', '_doc_link_module', '_doc_link_template', '_doc_link_url_param_generator', '_estimator_type', '_final_estimator', '_fit', '_get_default_requests', '_get_doc_link', '_get_metadata_request', '_get_param_names', '_get_params', '_get_tags', '_iter', '_log_message', '_more_tags', '_parameter_constraints', '_replace_estimator', '_repr_html_', '_repr_html_inner', '_repr_mimebundle_', '_required_parameters', '_set_params', '_sk_visual_block_', '_validate_data', '_validate_names', '_validate_params', '_validate_steps', 'classes_', 'decision_function', 'feature_names_in_', 'fit', 'fit_predict', 'fit_transform', 'get_feature_names_out', 'get_metadata_routing', 'get_params', 'inverse_transform', 'memory', 'n_features_in_', 'named_steps', 'predict', 'predict_log_proba', 'predict_proba', 'score', 'score_samples', 'set_output', 'set_params', 'set_score_request', 'steps', 'transform', 'verbose']
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/1604942718.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/2769658791.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/3840448016.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/3143510545.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 964, in evaluate_candidates
+    out = parallel(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 876, in _fit_and_score
+    estimator = estimator.set_params(**clone(parameters, safe=False))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 237, in set_params
+    self._set_params("steps", **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 69, in _set_params
+    super().set_params(**params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 279, in set_params
+    raise ValueError(
+ValueError: Invalid parameter 'classifier' for estimator Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('ordinal_cat',
+                                                  OrdinalEncoder(),
+                                                  ['room_type']),
+                                                 ('non_ordinal_cat',
+                                                  Pipeline(steps=[('simpleimputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('onehotencoder',
+                                                                   OneHotEncoder())]),
+                                                  ['neighbourhood_group']),
+                                                 ('impute_zero',
+                                                  SimpleImputer(fill_value=0,
+                                                                strategy='constant'),
+                                                  ['latitude', 'longitude...
+                                                                                 strategy='constant')),
+                                                                  ('functiontransformer',
+                                                                   FunctionTransformer(func=<function reshape at 0x1142f8b70>,
+                                                                                       kw_args={'new_shape': -1})),
+                                                                  ('tfidfvectorizer',
+                                                                   TfidfVectorizer(max_features=5,
+                                                                                   stop_words='english'))]),
+                                                  ['name'])])),
+                ('regressor',
+                 RandomForestRegressor(max_depth=15, max_features=0.5,
+                                       min_samples_leaf=3, min_samples_split=4,
+                                       n_jobs=-1, oob_score=True,
+                                       random_state=42))]). Valid parameters are: ['memory', 'steps', 'verbose'].
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/626474044.py", line 13, in <module>
+    search.fit(X, y)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1018, in fit
+    self._run_search(evaluate_candidates)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 1572, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_search.py", line 995, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 529, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError:
+All the 90 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+90 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 469, in fit
+    Xt = self._fit(X, y, routed_params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 406, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/memory.py", line 312, in __call__
+    return self.func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 1310, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 976, in fit_transform
+    result = self._call_func_on_transformers(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 885, in _call_func_on_transformers
+    return Parallel(n_jobs=self.n_jobs)(jobs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 1310, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 533, in fit_transform
+    Xt = self._fit(X, y, routed_params)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 406, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/joblib/memory.py", line 312, in __call__
+    return self.func(*args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/pipeline.py", line 1310, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/base.py", line 1101, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/preprocessing/_function_transformer.py", line 252, in transform
+    out = self._transform(X, func=self.func, kw_args=self.kw_args)
+  File "/Users/swathilakhinana/miniconda3/envs/nyc_airbnb_dev/lib/python3.10/site-packages/sklearn/preprocessing/_function_transformer.py", line 379, in _transform
+    return func(X, **(kw_args if kw_args else {}))
+TypeError: reshape() got an unexpected keyword argument 'new_shape'
+Best score : MAE =
+ -66.94805775804679
+ Best Params:

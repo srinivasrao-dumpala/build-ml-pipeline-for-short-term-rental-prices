@@ -1,0 +1,362 @@
+2024-09-01 20:12:18,677 INFO    MainThread:14561 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_setup.py:_flush():76] Configure stats pid to 14561
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_setup.py:_flush():76] Loading settings from /Users/swathilakhinana/.config/wandb/settings
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_setup.py:_flush():76] Loading settings from /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/settings
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_init.py:_log_setup():524] Logging user logs to /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20240901_201218-e5jj3xe0/logs/debug.log
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20240901_201218-e5jj3xe0/logs/debug-internal.log
+2024-09-01 20:12:18,678 INFO    MainThread:14561 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x19bdbd540>
+2024-09-01 20:12:18,679 INFO    MainThread:14561 [wandb_init.py:init():564] calling init triggers
+2024-09-01 20:12:18,679 INFO    MainThread:14561 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2024-09-01 20:12:18,679 INFO    MainThread:14561 [wandb_init.py:init():614] starting backend
+2024-09-01 20:12:18,679 INFO    MainThread:14561 [wandb_init.py:init():618] setting up manager
+2024-09-01 20:12:18,680 INFO    MainThread:14561 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-09-01 20:12:18,681 INFO    MainThread:14561 [wandb_init.py:init():624] backend started and connected
+2024-09-01 20:12:18,689 INFO    MainThread:14561 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-09-01 20:12:18,689 INFO    MainThread:14561 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-09-01 20:12:18,689 INFO    MainThread:14561 [wandb_init.py:init():716] updated telemetry
+2024-09-01 20:12:18,740 INFO    MainThread:14561 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-09-01 20:12:19,007 INFO    MainThread:14561 [wandb_run.py:_on_init():2254] communicating current version
+2024-09-01 20:12:19,096 INFO    MainThread:14561 [wandb_run.py:_on_init():2263] got version response upgrade_message: "wandb version 0.17.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-09-01 20:12:19,096 INFO    MainThread:14561 [wandb_init.py:init():800] starting run threads in backend
+2024-09-01 20:12:20,646 INFO    MainThread:14561 [wandb_run.py:_console_start():2233] atexit reg
+2024-09-01 20:12:20,647 INFO    MainThread:14561 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-09-01 20:12:20,647 INFO    MainThread:14561 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-09-01 20:12:20,647 INFO    MainThread:14561 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-09-01 20:12:20,647 INFO    MainThread:14561 [wandb_init.py:init():841] run started, returning control to user process
+2024-09-01 20:12:22,420 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:12:22,421 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:12:22,425 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:12:22,427 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:12:22,427 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:12:22,430 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:12:22,432 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:12:22,432 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:12:22,435 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:12:22,436 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:12:22,436 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:12:31,965 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:12:32,743 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:12:32,743 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:12:35,316 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:12:48,062 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:12:48,063 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:12:59,220 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:12:59,231 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:12:59,231 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:13:02,323 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:13:02,724 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:13:02,724 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:13:11,825 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:13:11,983 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:13:11,983 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:14:33,188 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:14:33,194 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:14:33,194 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:14:34,011 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:14:34,016 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:14:34,016 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:14:34,028 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:14:34,032 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:14:34,032 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:14:38,012 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:14:38,016 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:14:38,016 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:14:52,486 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:14:52,490 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:14:52,490 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:14:53,669 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:14:53,672 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:14:53,673 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:14:59,510 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:14:59,549 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:14:59,550 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:15:44,425 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:15:45,118 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:15:45,118 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:15:57,213 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:15:57,216 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:15:57,217 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:15:57,892 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:15:57,895 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:15:57,896 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:15:58,050 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:15:58,054 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:15:58,054 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:15:59,236 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:15:59,240 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:15:59,240 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:15:59,378 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:15:59,382 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:15:59,382 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:15:59,490 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:15:59,493 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:15:59,493 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:02,599 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:02,604 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:02,604 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:03,740 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:03,742 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:03,743 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:04,978 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:04,981 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:04,981 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:07,503 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:07,507 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:07,507 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:10,060 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:10,064 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:10,064 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:10,107 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:10,111 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:10,111 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:10,457 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:10,462 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:10,462 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:10,476 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:10,480 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:10,480 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:10,668 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:10,672 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:10,672 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:11,437 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:11,441 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:11,442 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:12,890 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:13,946 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:13,947 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:20,055 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:20,158 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:20,159 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:37,319 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:37,323 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:37,323 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:37,606 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:37,610 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:37,610 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:44,337 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:44,341 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:44,341 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:16:46,298 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:16:46,319 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:16:46,319 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:05,874 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:05,879 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:05,879 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:06,616 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:06,620 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:06,620 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:07,776 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:07,778 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:07,778 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:07,917 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:07,920 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:07,920 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:08,051 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:08,054 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:08,054 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:10,369 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:10,373 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:10,374 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:11,188 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:11,192 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:11,192 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:11,309 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:11,312 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:11,313 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:11,459 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:11,462 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:11,462 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:11,614 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:11,618 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:11,618 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:13,159 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:13,164 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:13,164 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:13,286 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:13,290 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:13,291 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:13,436 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:13,443 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:13,443 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:19,855 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:19,858 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:19,858 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:23,401 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:23,405 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:23,405 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:25,953 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:25,957 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:25,957 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:25,963 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:25,966 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:25,966 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:26,208 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:26,212 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:26,212 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:26,516 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:26,520 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:26,520 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:29,881 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:29,887 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:29,887 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:32,348 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:32,352 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:32,352 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:32,870 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:32,873 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:32,873 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:34,135 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:34,137 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:34,138 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:36,742 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:36,746 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:36,746 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:43,350 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:43,354 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:43,355 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:45,301 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:45,304 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:45,304 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:51,392 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:51,395 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:51,395 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:54,788 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:54,794 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:54,794 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:59,003 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:59,006 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:59,006 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:17:59,259 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:17:59,262 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:17:59,262 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:18:02,065 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:18:02,122 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:18:02,122 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:18:17,614 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:18:17,618 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:18:17,618 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:18:18,238 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:18:18,244 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:18:18,244 INFO    MainThread:14561 [wandb_init.py:_pause_backend():435] pausing backend
+2024-09-01 20:18:21,977 INFO    MainThread:14561 [wandb_init.py:_resume_backend():440] resuming backend
+2024-09-01 20:18:21,978 INFO    MainThread:14561 [wandb_run.py:_finish():1962] finishing run dsri238-s-p-global/nyc_airbnb/e5jj3xe0
+2024-09-01 20:18:22,185 ERROR   MainThread:14561 [jupyter.py:save_history():500] Unable to save ipython session history:
+{'matches': ['.T', '.abs', '.add', '.add_prefix', '.add_suffix', '.agg', '.aggregate', '.align', '.all', '.any', '.apply', '.argmax', '.argmin', '.argsort', '.array', '.asfreq', '.asof', '.astype', '.at', '.at_time', '.attrs', '.autocorr', '.axes', '.backfill', '.between', '.between_time', '.bfill', '.bool', '.cat', '.clip', '.combine', '.combine_first', '.compare', '.convert_dtypes', '.copy', '.corr', '.count', '.cov', '.cummax', '.cummin', '.cumprod', '.cumsum', '.describe', '.diff', '.div', '.divide', '.divmod', '.dot', '.drop', '.drop_duplicates', '.droplevel', '.dropna', '.dt', '.dtype', '.dtypes', '.duplicated', '.empty', '.eq', '.equals', '.ewm', '.expanding', '.explode', '.factorize', '.ffill', '.fillna', '.filter', '.first', '.first_valid_index', '.flags', '.floordiv', '.ge', '.get', '.groupby', '.gt', '.hasnans', '.head', '.hist', '.iat', '.idxmax', '.idxmin', '.iloc', '.index', '.infer_objects', '.info', '.interpolate', '.is_monotonic_decreasing', '.is_monotonic_increasing', '.is_unique', '.isin', '.isna', '.isnull', '.item', '.items', '.keys', '.kurt', '.kurtosis', '.last', '.last_valid_index', '.le', '.loc', '.lt', '.map', '.mask', '.max', '.mean', '.median', '.memory_usage', '.min', '.mod', '.mode', '.mul', '.multiply', '.name', '.nbytes', '.ndim', '.ne', '.nlargest', '.notna', '.notnull', '.nsmallest', '.nunique', '.pad', '.pct_change', '.pipe', '.plot', '.pop', '.pow', '.prod', '.product', '.quantile', '.radd', '.rank', '.ravel', '.rdiv', '.rdivmod', '.reindex', '.reindex_like', '.rename', '.rename_axis', '.reorder_levels', '.repeat', '.replace', '.resample', '.reset_index', '.rfloordiv', '.rmod', '.rmul', '.rolling', '.round', '.rpow', '.rsub', '.rtruediv', '.sample', '.searchsorted', '.sem', '.set_axis', '.set_flags', '.shape', '.shift', '.size', '.skew', '.sort_index', '.sort_values', '.sparse', '.squeeze', '.std', '.str', '.sub', '.subtract', '.sum', '.swapaxes', '.swaplevel', '.tail', '.take', '.to_clipboard', '.to_csv', '.to_dict', '.to_excel', '.to_frame', '.to_hdf', '.to_json', '.to_latex', '.to_list', '.to_markdown', '.to_numpy', '.to_period', '.to_pickle', '.to_sql', '.to_string', '.to_timestamp', '.to_xarray', '.tolist', '.transform', '.transpose', '.truediv', '.truncate', '.tz_convert', '.tz_localize', '.unique', '.unstack', '.update', '.value_counts', '.values', '.var', '.view', '.where', '.xs'], 'cursor_end': 24, 'cursor_start': 23, 'metadata': {'_jupyter_types_experimental': [{'start': 23, 'end': 24, 'text': '.T', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.abs', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.add', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.add_prefix', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.add_suffix', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.agg', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.aggregate', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.align', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.all', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.any', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.apply', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.argmax', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.argmin', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.argsort', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.array', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.asfreq', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.asof', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.astype', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.at', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.at_time', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.attrs', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.autocorr', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.axes', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.backfill', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.between', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.between_time', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.bfill', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.bool', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.cat', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.clip', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.combine', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.combine_first', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.compare', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.convert_dtypes', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.copy', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.corr', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.count', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.cov', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.cummax', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.cummin', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.cumprod', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.cumsum', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.describe', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.diff', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.div', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.divide', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.divmod', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.dot', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.drop', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.drop_duplicates', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.droplevel', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.dropna', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.dt', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.dtype', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.dtypes', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.duplicated', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.empty', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.eq', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.equals', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.ewm', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.expanding', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.explode', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.factorize', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.ffill', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.fillna', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.filter', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.first', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.first_valid_index', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.flags', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.floordiv', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.ge', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.get', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.groupby', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.gt', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.hasnans', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.head', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.hist', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.iat', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.idxmax', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.idxmin', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.iloc', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.index', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.infer_objects', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.info', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.interpolate', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.is_monotonic_decreasing', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.is_monotonic_increasing', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.is_unique', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.isin', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.isna', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.isnull', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.item', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.items', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.keys', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.kurt', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.kurtosis', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.last', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.last_valid_index', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.le', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.loc', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.lt', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.map', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.mask', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.max', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.mean', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.median', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.memory_usage', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.min', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.mod', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.mode', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.mul', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.multiply', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.name', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.nbytes', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.ndim', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.ne', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.nlargest', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.notna', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.notnull', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.nsmallest', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.nunique', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.pad', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.pct_change', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.pipe', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.plot', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.pop', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.pow', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.prod', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.product', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.quantile', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.radd', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rank', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.ravel', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rdiv', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rdivmod', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.reindex', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.reindex_like', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rename', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rename_axis', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.reorder_levels', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.repeat', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.replace', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.resample', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.reset_index', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rfloordiv', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rmod', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rmul', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rolling', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.round', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rpow', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rsub', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.rtruediv', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.sample', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.searchsorted', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.sem', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.set_axis', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.set_flags', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.shape', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.shift', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.size', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.skew', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.sort_index', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.sort_values', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.sparse', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.squeeze', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.std', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.str', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.sub', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.subtract', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.sum', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.swapaxes', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.swaplevel', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.tail', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.take', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_clipboard', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_csv', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_dict', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_excel', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_frame', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_hdf', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_json', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_latex', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_list', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_markdown', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_numpy', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_period', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_pickle', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_sql', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_string', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_timestamp', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.to_xarray', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.tolist', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.transform', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.transpose', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.truediv', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.truncate', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.tz_convert', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.tz_localize', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.unique', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.unstack', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.update', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.value_counts', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.values', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.var', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.view', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.where', 'type': '<unknown>', 'signature': ''}, {'start': 23, 'end': 24, 'text': '.xs', 'type': '<unknown>', 'signature': ''}]}, 'status': 'ok'} is not valid under any of the given schemas
+
+Failed validating 'oneOf' in notebook['properties']['data']['additionalProperties']:
+
+On instance['data']['application/vnd.vscode.bg.execution.117.result']:
+{'cursor_end': 24,
+ 'cursor_start': 23,
+ 'matches': ['.T',
+             '.abs',
+             '.add',
+             '.add_prefix',
+             '.add_suffix',
+             '.agg',
+             '.aggregate',
+             '.align',
+             '.all',
+             '.any',
+             '.apply',
+             '.argmax',
+             '.argmin',
+             '.argsort',
+             '.array',
+             '.asfreq',
+             '...191 items truncated...'],
+ 'metadata': {'_jupyter_types_experimental': [{'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.T',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.abs',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.add',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.add_prefix',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.add_suffix',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.agg',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.aggregate',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.align',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.all',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.any',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.apply',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.argmax',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.argmin',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.argsort',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.array',
+                                               'type': '<unknown>'},
+                                              {'end': 24,
+                                               'signature': '',
+                                               'start': 23,
+                                               'text': '.asfreq',
+                                               'type': '<unknown>'},
+                                              '...191 items truncated...']},
+ 'status': 'ok'}
+2024-09-01 20:18:22,186 INFO    MainThread:14561 [jupyter.py:_save_ipynb():384] looking for notebook: None
+2024-09-01 20:18:22,186 INFO    MainThread:14561 [wandb_init.py:_jupyter_teardown():452] cleaning up jupyter logic
+2024-09-01 20:18:22,186 INFO    MainThread:14561 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 0
+2024-09-01 20:18:22,186 INFO    MainThread:14561 [wandb_run.py:_restore():2185] restore
+2024-09-01 20:18:22,187 INFO    MainThread:14561 [wandb_run.py:_restore():2191] restore done
+2024-09-01 20:18:44,759 INFO    MainThread:14561 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2024-09-01 20:18:44,759 INFO    MainThread:14561 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2024-09-01 20:18:44,766 INFO    MainThread:14561 [wandb_run.py:_footer_sync_info():3719] logging synced files

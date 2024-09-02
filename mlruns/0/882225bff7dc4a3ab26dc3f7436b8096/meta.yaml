@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/882225bff7dc4a3ab26dc3f7436b8096/artifacts
+end_time: 1725233877751
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 882225bff7dc4a3ab26dc3f7436b8096
+run_name: marvelous-foal-516
+run_uuid: 882225bff7dc4a3ab26dc3f7436b8096
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725233856677
+status: 3
+tags: []
+user_id: swathilakhinana

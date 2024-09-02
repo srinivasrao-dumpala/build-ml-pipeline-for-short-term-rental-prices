@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/2ac888fcd4f54c9f9d90fe85f2af2b54/artifacts
+end_time: 1725235777700
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2ac888fcd4f54c9f9d90fe85f2af2b54
+run_name: gifted-gull-531
+run_uuid: 2ac888fcd4f54c9f9d90fe85f2af2b54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725235636741
+status: 3
+tags: []
+user_id: swathilakhinana

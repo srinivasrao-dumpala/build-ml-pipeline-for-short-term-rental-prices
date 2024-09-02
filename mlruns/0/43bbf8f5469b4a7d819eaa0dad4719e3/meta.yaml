@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/43bbf8f5469b4a7d819eaa0dad4719e3/artifacts
+end_time: 1725235121451
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 43bbf8f5469b4a7d819eaa0dad4719e3
+run_name: clumsy-skink-862
+run_uuid: 43bbf8f5469b4a7d819eaa0dad4719e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725235110220
+status: 3
+tags: []
+user_id: swathilakhinana

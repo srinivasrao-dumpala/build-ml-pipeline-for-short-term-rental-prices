@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/1646e32095924152b3888240c77fcf7a/artifacts
+end_time: 1725242179278
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1646e32095924152b3888240c77fcf7a
+run_name: luminous-ram-932
+run_uuid: 1646e32095924152b3888240c77fcf7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725242176785
+status: 4
+tags: []
+user_id: swathilakhinana

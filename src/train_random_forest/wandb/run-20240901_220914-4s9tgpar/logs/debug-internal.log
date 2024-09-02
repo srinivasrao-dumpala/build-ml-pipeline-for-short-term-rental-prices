@@ -1,0 +1,196 @@
+2024-09-01 22:09:14,854 INFO    StreamThr :20241 [internal.py:wandb_internal():86] W&B internal server running at pid: 20241, started at: 2024-09-01 22:09:14.853560
+2024-09-01 22:09:14,856 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: status
+2024-09-01 22:09:14,858 INFO    WriterThread:20241 [datastore.py:open_for_write():85] open: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/run-4s9tgpar.wandb
+2024-09-01 22:09:14,858 DEBUG   SenderThread:20241 [sender.py:send():380] send: header
+2024-09-01 22:09:14,896 DEBUG   SenderThread:20241 [sender.py:send():380] send: run
+2024-09-01 22:09:15,212 INFO    SenderThread:20241 [dir_watcher.py:__init__():211] watching files in: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files
+2024-09-01 22:09:15,212 INFO    SenderThread:20241 [sender.py:_start_run_threads():1124] run started: 4s9tgpar with start time 1725242954.853861
+2024-09-01 22:09:15,227 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: check_version
+2024-09-01 22:09:15,227 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: check_version
+2024-09-01 22:09:15,324 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: run_start
+2024-09-01 22:09:15,345 DEBUG   HandlerThread:20241 [system_info.py:__init__():32] System info init
+2024-09-01 22:09:15,346 DEBUG   HandlerThread:20241 [system_info.py:__init__():47] System info init done
+2024-09-01 22:09:15,346 INFO    HandlerThread:20241 [system_monitor.py:start():194] Starting system monitor
+2024-09-01 22:09:15,346 INFO    SystemMonitor:20241 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-01 22:09:15,347 INFO    HandlerThread:20241 [system_monitor.py:probe():214] Collecting system info
+2024-09-01 22:09:15,347 INFO    SystemMonitor:20241 [interfaces.py:start():190] Started cpu monitoring
+2024-09-01 22:09:15,347 DEBUG   HandlerThread:20241 [system_info.py:probe():196] Probing system
+2024-09-01 22:09:15,349 INFO    SystemMonitor:20241 [interfaces.py:start():190] Started disk monitoring
+2024-09-01 22:09:15,349 INFO    SystemMonitor:20241 [interfaces.py:start():190] Started memory monitoring
+2024-09-01 22:09:15,350 INFO    SystemMonitor:20241 [interfaces.py:start():190] Started network monitoring
+2024-09-01 22:09:15,358 DEBUG   HandlerThread:20241 [system_info.py:_probe_git():181] Probing git
+2024-09-01 22:09:15,399 DEBUG   HandlerThread:20241 [system_info.py:_probe_git():189] Probing git done
+2024-09-01 22:09:15,399 DEBUG   HandlerThread:20241 [system_info.py:probe():244] Probing system done
+2024-09-01 22:09:15,399 DEBUG   HandlerThread:20241 [system_monitor.py:probe():223] {'os': 'macOS-14.6.1-x86_64-i386-64bit', 'python': '3.10.14', 'heartbeatAt': '2024-09-02T02:09:15.347732', 'startedAt': '2024-09-02T02:09:14.845929', 'docker': None, 'cuda': None, 'args': ('--trainval_artifact', 'trainval_data.csv:latest', '--val_size', '0.2', '--random_seed', '42', '--stratify_by', 'neighbourhood_group', '--rf_config', '/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/outputs/2024-09-01/22-09-11/rf_config.json', '--max_tfidf_features', '5', '--output_artifact', 'random_forest_export'), 'state': 'running', 'program': '/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py', 'codePathLocal': 'run.py', 'codePath': 'src/train_random_forest/run.py', 'git': {'remote': 'https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices.git', 'commit': '3e57919f7c98506024ba400fcde4d87f5a94b9b0'}, 'email': None, 'root': '/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices', 'host': 'Swathis-MacBook-Air.local', 'username': 'swathilakhinana', 'executable': '/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 460.4317207336426, 'used': 9.560897827148438}}, 'memory': {'total': 16.0}}
+2024-09-01 22:09:15,400 INFO    HandlerThread:20241 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-01 22:09:15,400 INFO    HandlerThread:20241 [system_monitor.py:probe():227] Publishing system info
+2024-09-01 22:09:15,400 DEBUG   HandlerThread:20241 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-09-01 22:09:15,400 DEBUG   HandlerThread:20241 [system_info.py:_save_pip():68] Saving pip packages done
+2024-09-01 22:09:15,400 DEBUG   HandlerThread:20241 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-09-01 22:09:16,039 DEBUG   HandlerThread:20241 [system_info.py:_save_conda():87] Saving conda packages done
+2024-09-01 22:09:16,040 INFO    HandlerThread:20241 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-01 22:09:16,043 DEBUG   SenderThread:20241 [sender.py:send():380] send: files
+2024-09-01 22:09:16,043 INFO    SenderThread:20241 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2024-09-01 22:09:16,047 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: stop_status
+2024-09-01 22:09:16,047 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: stop_status
+2024-09-01 22:09:16,048 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: internal_messages
+2024-09-01 22:09:16,210 DEBUG   SenderThread:20241 [sender.py:send():380] send: telemetry
+2024-09-01 22:09:16,210 DEBUG   SenderThread:20241 [sender.py:send():380] send: config
+2024-09-01 22:09:16,210 DEBUG   SenderThread:20241 [sender.py:send():380] send: config
+2024-09-01 22:09:16,219 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/requirements.txt
+2024-09-01 22:09:16,219 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/wandb-metadata.json
+2024-09-01 22:09:16,219 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/conda-environment.yaml
+2024-09-01 22:09:16,388 INFO    wandb-upload_0:20241 [upload_job.py:push():131] Uploaded file /var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/tmp_b5eauzvwandb/e8r3j3sf-wandb-metadata.json
+2024-09-01 22:09:16,463 DEBUG   SenderThread:20241 [sender.py:send():380] send: use_artifact
+2024-09-01 22:09:17,221 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/output.log
+2024-09-01 22:09:19,041 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: log_artifact
+2024-09-01 22:09:19,041 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: log_artifact
+2024-09-01 22:09:19,227 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/output.log
+2024-09-01 22:09:19,735 INFO    wandb-upload_0:20241 [upload_job.py:push():86] Skipped uploading /Users/swathilakhinana/Library/Application Support/wandb/artifacts/staging/tmp9p90mv1t
+2024-09-01 22:09:19,735 INFO    wandb-upload_2:20241 [upload_job.py:push():86] Skipped uploading /Users/swathilakhinana/Library/Application Support/wandb/artifacts/staging/tmpdpe0_tq5
+2024-09-01 22:09:19,735 INFO    wandb-upload_4:20241 [upload_job.py:push():86] Skipped uploading /Users/swathilakhinana/Library/Application Support/wandb/artifacts/staging/tmp9hwe_o17
+2024-09-01 22:09:19,736 INFO    wandb-upload_5:20241 [upload_job.py:push():86] Skipped uploading /Users/swathilakhinana/Library/Application Support/wandb/artifacts/staging/tmpqtqei1ub
+2024-09-01 22:09:19,935 INFO    wandb-upload_1:20241 [upload_job.py:push():89] Uploaded file /Users/swathilakhinana/Library/Application Support/wandb/artifacts/staging/tmp9cmx34nq
+2024-09-01 22:09:21,235 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/output.log
+2024-09-01 22:09:27,361 INFO    wandb-upload_3:20241 [upload_job.py:push():89] Uploaded file /Users/swathilakhinana/Library/Application Support/wandb/artifacts/staging/tmpxu35uq1b
+2024-09-01 22:09:28,112 INFO    SenderThread:20241 [sender.py:send_request_log_artifact():1446] logged artifact random_forest_export - {'id': 'QXJ0aWZhY3Q6MTE3NjAxMTY5OQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxOTMyMzc2Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE3NjAwNzQ4OQ==', 'versionIndex': 0}}}
+2024-09-01 22:09:28,113 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: status_report
+2024-09-01 22:09:28,482 DEBUG   SenderThread:20241 [sender.py:send():380] send: exit
+2024-09-01 22:09:28,483 INFO    SenderThread:20241 [sender.py:send_exit():585] handling exit code: 1
+2024-09-01 22:09:28,483 INFO    SenderThread:20241 [sender.py:send_exit():587] handling runtime: 13
+2024-09-01 22:09:28,483 INFO    SenderThread:20241 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-09-01 22:09:28,484 INFO    SenderThread:20241 [sender.py:send_exit():593] send defer
+2024-09-01 22:09:28,485 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:28,485 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 0
+2024-09-01 22:09:28,485 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:28,485 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-09-01 22:09:28,485 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 1
+2024-09-01 22:09:28,485 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:28,485 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 1
+2024-09-01 22:09:28,486 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:28,486 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-09-01 22:09:28,486 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 2
+2024-09-01 22:09:28,486 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:28,486 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 2
+2024-09-01 22:09:28,486 INFO    HandlerThread:20241 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-01 22:09:28,486 DEBUG   SystemMonitor:20241 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-01 22:09:28,486 INFO    HandlerThread:20241 [interfaces.py:finish():202] Joined cpu monitor
+2024-09-01 22:09:28,486 DEBUG   SystemMonitor:20241 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-01 22:09:28,486 INFO    HandlerThread:20241 [interfaces.py:finish():202] Joined disk monitor
+2024-09-01 22:09:28,486 DEBUG   SystemMonitor:20241 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-01 22:09:28,487 INFO    HandlerThread:20241 [interfaces.py:finish():202] Joined memory monitor
+2024-09-01 22:09:28,487 INFO    HandlerThread:20241 [interfaces.py:finish():202] Joined network monitor
+2024-09-01 22:09:28,487 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:28,488 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-09-01 22:09:28,488 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 3
+2024-09-01 22:09:28,488 DEBUG   SenderThread:20241 [sender.py:send():380] send: stats
+2024-09-01 22:09:28,488 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:28,488 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 3
+2024-09-01 22:09:28,488 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:28,488 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-09-01 22:09:28,488 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 4
+2024-09-01 22:09:28,488 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:28,488 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 4
+2024-09-01 22:09:28,488 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:28,488 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-09-01 22:09:28,488 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 5
+2024-09-01 22:09:28,489 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:28,489 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 5
+2024-09-01 22:09:28,489 DEBUG   SenderThread:20241 [sender.py:send():380] send: summary
+2024-09-01 22:09:28,489 INFO    SenderThread:20241 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-09-01 22:09:28,489 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:28,489 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-09-01 22:09:28,489 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 6
+2024-09-01 22:09:28,489 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:28,489 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 6
+2024-09-01 22:09:28,489 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:28,489 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-09-01 22:09:28,493 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: status_report
+2024-09-01 22:09:28,561 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 7
+2024-09-01 22:09:28,561 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:28,561 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 7
+2024-09-01 22:09:28,561 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:28,561 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-09-01 22:09:29,274 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/config.yaml
+2024-09-01 22:09:29,275 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/wandb-summary.json
+2024-09-01 22:09:29,488 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-01 22:09:31,284 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/output.log
+2024-09-01 22:09:32,493 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 8
+2024-09-01 22:09:32,494 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: poll_exit
+2024-09-01 22:09:32,494 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:32,494 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 8
+2024-09-01 22:09:32,495 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:32,495 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-09-01 22:09:32,495 INFO    SenderThread:20241 [job_builder.py:build():298] Attempting to build job artifact
+2024-09-01 22:09:32,496 INFO    SenderThread:20241 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-09-01 22:09:32,498 INFO    SenderThread:20241 [job_builder.py:build():404] adding wandb-job metadata file
+2024-09-01 22:09:32,502 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 9
+2024-09-01 22:09:32,502 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:32,502 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 9
+2024-09-01 22:09:32,503 DEBUG   SenderThread:20241 [sender.py:send():380] send: artifact
+2024-09-01 22:09:32,712 INFO    SenderThread:20241 [sender.py:send_artifact():1458] sent artifact job-https___github.com_udacity_build-ml-pipeline-for-short-term-rental-prices.git_src_train_random_forest_run.py - {'id': 'QXJ0aWZhY3Q6MTE3NjAwMDg0Ng==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxOTMyMjQ4MQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE3NjAwMDg0Ng==', 'versionIndex': 0}}}
+2024-09-01 22:09:32,712 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:32,712 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-09-01 22:09:32,712 INFO    SenderThread:20241 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-01 22:09:33,294 INFO    Thread-12 :20241 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/output.log
+2024-09-01 22:09:33,295 INFO    SenderThread:20241 [dir_watcher.py:finish():388] scan: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files
+2024-09-01 22:09:33,296 INFO    SenderThread:20241 [dir_watcher.py:finish():402] scan save: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/requirements.txt requirements.txt
+2024-09-01 22:09:33,296 INFO    SenderThread:20241 [dir_watcher.py:finish():402] scan save: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/output.log output.log
+2024-09-01 22:09:33,296 INFO    SenderThread:20241 [dir_watcher.py:finish():402] scan save: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/config.yaml config.yaml
+2024-09-01 22:09:33,303 INFO    SenderThread:20241 [dir_watcher.py:finish():402] scan save: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/wandb-summary.json wandb-summary.json
+2024-09-01 22:09:33,307 INFO    SenderThread:20241 [dir_watcher.py:finish():402] scan save: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/conda-environment.yaml conda-environment.yaml
+2024-09-01 22:09:33,309 INFO    SenderThread:20241 [dir_watcher.py:finish():402] scan save: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/wandb-metadata.json wandb-metadata.json
+2024-09-01 22:09:33,310 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 10
+2024-09-01 22:09:33,312 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:33,312 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 10
+2024-09-01 22:09:33,313 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:33,313 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-09-01 22:09:33,313 INFO    SenderThread:20241 [file_pusher.py:finish():175] shutting down file pusher
+2024-09-01 22:09:33,533 INFO    wandb-upload_0:20241 [upload_job.py:push():131] Uploaded file /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/requirements.txt
+2024-09-01 22:09:33,578 INFO    wandb-upload_2:20241 [upload_job.py:push():131] Uploaded file /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/output.log
+2024-09-01 22:09:33,645 INFO    wandb-upload_5:20241 [upload_job.py:push():131] Uploaded file /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/config.yaml
+2024-09-01 22:09:33,690 INFO    wandb-upload_3:20241 [upload_job.py:push():131] Uploaded file /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/wandb-summary.json
+2024-09-01 22:09:33,846 INFO    wandb-upload_1:20241 [upload_job.py:push():131] Uploaded file /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/files/conda-environment.yaml
+2024-09-01 22:09:34,050 INFO    Thread-11 (_thread_body):20241 [sender.py:transition_state():613] send defer: 11
+2024-09-01 22:09:34,050 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:34,051 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 11
+2024-09-01 22:09:34,052 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:34,052 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-09-01 22:09:34,052 INFO    SenderThread:20241 [file_pusher.py:join():181] waiting for file pusher
+2024-09-01 22:09:34,052 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 12
+2024-09-01 22:09:34,053 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:34,053 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 12
+2024-09-01 22:09:34,053 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:34,053 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-09-01 22:09:34,054 INFO    SenderThread:20241 [file_stream.py:finish():595] file stream finish called
+2024-09-01 22:09:34,129 INFO    SenderThread:20241 [file_stream.py:finish():599] file stream finish is done
+2024-09-01 22:09:34,129 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 13
+2024-09-01 22:09:34,130 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:34,130 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 13
+2024-09-01 22:09:34,131 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:34,131 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-09-01 22:09:34,131 INFO    SenderThread:20241 [sender.py:transition_state():613] send defer: 14
+2024-09-01 22:09:34,132 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: defer
+2024-09-01 22:09:34,132 DEBUG   SenderThread:20241 [sender.py:send():380] send: final
+2024-09-01 22:09:34,132 INFO    HandlerThread:20241 [handler.py:handle_request_defer():172] handle defer: 14
+2024-09-01 22:09:34,132 DEBUG   SenderThread:20241 [sender.py:send():380] send: footer
+2024-09-01 22:09:34,132 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: defer
+2024-09-01 22:09:34,132 INFO    SenderThread:20241 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-09-01 22:09:34,133 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-01 22:09:34,133 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: poll_exit
+2024-09-01 22:09:34,134 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: server_info
+2024-09-01 22:09:34,134 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: server_info
+2024-09-01 22:09:34,137 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: get_summary
+2024-09-01 22:09:34,137 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: sampled_history
+2024-09-01 22:09:34,138 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: internal_messages
+2024-09-01 22:09:34,139 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: job_info
+2024-09-01 22:09:34,201 DEBUG   SenderThread:20241 [sender.py:send_request():407] send_request: job_info
+2024-09-01 22:09:34,201 INFO    MainThread:20241 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2024-09-01 22:09:34,202 INFO    MainThread:20241 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2024-09-01 22:09:34,202 INFO    MainThread:20241 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2024-09-01 22:09:34,203 DEBUG   HandlerThread:20241 [handler.py:handle_request():146] handle_request: shutdown
+2024-09-01 22:09:34,203 INFO    HandlerThread:20241 [handler.py:finish():866] shutting down handler
+2024-09-01 22:09:35,144 INFO    WriterThread:20241 [datastore.py:close():294] close: /Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20240901_220914-4s9tgpar/run-4s9tgpar.wandb
+2024-09-01 22:09:35,206 INFO    SenderThread:20241 [sender.py:finish():1536] shutting down sender
+2024-09-01 22:09:35,207 INFO    SenderThread:20241 [file_pusher.py:finish():175] shutting down file pusher
+2024-09-01 22:09:35,207 INFO    SenderThread:20241 [file_pusher.py:join():181] waiting for file pusher

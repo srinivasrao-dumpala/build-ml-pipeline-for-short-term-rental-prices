@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/4694612fc647472681c1f52ac8fef693/artifacts
+end_time: 1725237816090
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4694612fc647472681c1f52ac8fef693
+run_name: handsome-gnat-129
+run_uuid: 4694612fc647472681c1f52ac8fef693
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725237684565
+status: 3
+tags: []
+user_id: swathilakhinana

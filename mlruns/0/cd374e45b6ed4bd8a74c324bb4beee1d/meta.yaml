@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/cd374e45b6ed4bd8a74c324bb4beee1d/artifacts
+end_time: 1725234981324
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cd374e45b6ed4bd8a74c324bb4beee1d
+run_name: intrigued-wasp-214
+run_uuid: cd374e45b6ed4bd8a74c324bb4beee1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725234970455
+status: 4
+tags: []
+user_id: swathilakhinana

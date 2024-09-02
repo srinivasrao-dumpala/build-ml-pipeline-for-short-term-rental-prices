@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/ae74fde22fdc4ebabc4ea6177736d64c/artifacts
+end_time: 1725238094168
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ae74fde22fdc4ebabc4ea6177736d64c
+run_name: glamorous-newt-219
+run_uuid: ae74fde22fdc4ebabc4ea6177736d64c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725238090803
+status: 4
+tags: []
+user_id: swathilakhinana

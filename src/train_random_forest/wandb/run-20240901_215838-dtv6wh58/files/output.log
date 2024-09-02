@@ -1,0 +1,19 @@
+2024-09-01 21:58:40,367 Minimum price: 10, Maximum price: 350
+2024-09-01 21:58:40,382 Preparing sklearn pipeline
+2024-09-01 21:58:40,382 Fitting
+Traceback (most recent call last):
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 312, in <module>
+    go(args)
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 79, in go
+    sk_pipe.fit(X_train, y_train)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/sklearn/base.py", line 1152, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/sklearn/pipeline.py", line 423, in fit
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/sklearn/pipeline.py", line 357, in _fit
+    self._validate_steps()
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/sklearn/pipeline.py", line 229, in _validate_steps
+    self._validate_names(names)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/sklearn/utils/metaestimators.py", line 82, in _validate_names
+    raise ValueError("Names provided are not unique: {0!r}".format(list(names)))
+ValueError: Names provided are not unique: ['preprocessor', 'preprocessor']

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/6a44c4e20be847a99fb8eaf8c5b31bcd/artifacts
+end_time: 1725244613271
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6a44c4e20be847a99fb8eaf8c5b31bcd
+run_name: defiant-moose-735
+run_uuid: 6a44c4e20be847a99fb8eaf8c5b31bcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725244491589
+status: 4
+tags: []
+user_id: swathilakhinana

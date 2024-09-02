@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/f79d0a1942464e589ae06221eed85308/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f79d0a1942464e589ae06221eed85308
+run_name: glamorous-turtle-807
+run_uuid: f79d0a1942464e589ae06221eed85308
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725234782549
+status: 1
+tags: []
+user_id: swathilakhinana

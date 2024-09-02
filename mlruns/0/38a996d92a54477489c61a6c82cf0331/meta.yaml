@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/38a996d92a54477489c61a6c82cf0331/artifacts
+end_time: 1725243460302
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 38a996d92a54477489c61a6c82cf0331
+run_name: gaudy-whale-453
+run_uuid: 38a996d92a54477489c61a6c82cf0331
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725243421737
+status: 3
+tags: []
+user_id: swathilakhinana

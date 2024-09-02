@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/b802196fb0f547b89e2529bb622abde9/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b802196fb0f547b89e2529bb622abde9
+run_name: brawny-hound-988
+run_uuid: b802196fb0f547b89e2529bb622abde9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725231830938
+status: 1
+tags: []
+user_id: swathilakhinana

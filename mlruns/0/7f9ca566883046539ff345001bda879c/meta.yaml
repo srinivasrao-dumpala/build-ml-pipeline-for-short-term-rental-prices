@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/7f9ca566883046539ff345001bda879c/artifacts
+end_time: 1725237159837
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7f9ca566883046539ff345001bda879c
+run_name: delightful-moose-159
+run_uuid: 7f9ca566883046539ff345001bda879c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725237026420
+status: 3
+tags: []
+user_id: swathilakhinana

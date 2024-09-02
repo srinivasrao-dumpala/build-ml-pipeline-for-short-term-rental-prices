@@ -1,0 +1,28 @@
+2024-09-01 22:04:59,629 Minimum price: 10, Maximum price: 350
+2024-09-01 22:04:59,641 Preparing sklearn pipeline
+2024-09-01 22:04:59,642 Fitting
+2024-09-01 22:05:00,256 Scoring
+2024-09-01 22:05:00,322 Score: 0.5519152667668663
+2024-09-01 22:05:00,323 MAE: 34.12760059704365
+2024-09-01 22:05:00,323 Exporting model
+2024/09/01 22:05:00 WARNING mlflow.models.signature: Failed to infer the model signature from the input example. Reason: MlflowException("Unable to map 'object' type to MLflow DataType. object can be mapped iff all values have identical data type which is one of (string, (bytes or byterray),  int, float)."). To see the full traceback, set the logging level to DEBUG via `logging.getLogger("mlflow").setLevel(logging.DEBUG)`. To disable automatic signature inference, set `signature` to `False` in your `log_model` or `save_model` call.
+/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/_distutils_hack/__init__.py:32: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+[34m[1mwandb[39m[22m: Adding directory to artifact (/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/tmp77glbslk/random_forest_dir)... Done. 0.1s
+Traceback (most recent call last):
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/sklearn/pipeline.py", line 299, in __getitem__
+    name, est = self.steps[ind]
+TypeError: list indices must be integers or slices, not str
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 313, in <module>
+    go(args)
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 137, in go
+    fig_feat_imp = plot_feature_importance(sk_pipe, processed_features)
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 157, in plot_feature_importance
+    feat_imp = pipe["random_forest"].feature_importances_[: len(feat_names)-1]
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/sklearn/pipeline.py", line 302, in __getitem__
+    return self.named_steps[ind]
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/sklearn/utils/_bunch.py", line 39, in __getitem__
+    return super().__getitem__(key)
+KeyError: 'random_forest'

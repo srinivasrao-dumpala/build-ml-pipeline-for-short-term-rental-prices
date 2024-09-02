@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/8bfd0fec97754580931a984dec2221a5/artifacts
+end_time: 1725243460148
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8bfd0fec97754580931a984dec2221a5
+run_name: nosy-fox-547
+run_uuid: 8bfd0fec97754580931a984dec2221a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725243423990
+status: 3
+tags: []
+user_id: swathilakhinana

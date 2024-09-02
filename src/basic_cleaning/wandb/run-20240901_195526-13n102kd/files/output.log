@@ -1,0 +1,21 @@
+
+2024-09-01 19:55:27,815 Downloading the input artifact sample.csv:latest
+2024-09-01 19:55:29,376 cleaning raw dataset
+Traceback (most recent call last):
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/main.py", line 102, in <module>
+    go(args)
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/main.py", line 32, in go
+    price_range_index = df['price'].between(args.min_price, args.max_price)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-9f6c0b504ca87d8bdd73b9b2121e86ad5c2c08e1/lib/python3.9/site-packages/pandas/core/series.py", line 4737, in between
+    lmask = self >= left
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-9f6c0b504ca87d8bdd73b9b2121e86ad5c2c08e1/lib/python3.9/site-packages/pandas/core/ops/common.py", line 65, in new_method
+    return method(self, other)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-9f6c0b504ca87d8bdd73b9b2121e86ad5c2c08e1/lib/python3.9/site-packages/pandas/core/arraylike.py", line 49, in __ge__
+    return self._cmp_method(other, operator.ge)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-9f6c0b504ca87d8bdd73b9b2121e86ad5c2c08e1/lib/python3.9/site-packages/pandas/core/series.py", line 4978, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-9f6c0b504ca87d8bdd73b9b2121e86ad5c2c08e1/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 240, in comparison_op
+    return invalid_comparison(lvalues, rvalues, op)
+  File "/Users/swathilakhinana/miniconda3/envs/mlflow-9f6c0b504ca87d8bdd73b9b2121e86ad5c2c08e1/lib/python3.9/site-packages/pandas/core/ops/invalid.py", line 34, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=int64 and str

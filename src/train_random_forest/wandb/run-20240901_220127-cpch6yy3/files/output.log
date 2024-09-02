@@ -1,0 +1,13 @@
+2024-09-01 22:01:29,246 Minimum price: 10, Maximum price: 350
+2024-09-01 22:01:29,258 Preparing sklearn pipeline
+2024-09-01 22:01:29,259 Fitting
+2024-09-01 22:01:29,871 Scoring
+2024-09-01 22:01:29,934 Score: 0.5519152667668663
+2024-09-01 22:01:29,934 MAE: 34.12760059704365
+2024-09-01 22:01:29,934 Exporting model
+Traceback (most recent call last):
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 313, in <module>
+    go(args)
+  File "/Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/run.py", line 114, in go
+    mlflow.sklearn.save_model(
+TypeError: save_model() got an unexpected keyword argument 'serialization_formt'

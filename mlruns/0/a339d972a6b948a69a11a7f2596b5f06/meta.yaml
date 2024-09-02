@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/a339d972a6b948a69a11a7f2596b5f06/artifacts
+end_time: 1725242976587
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a339d972a6b948a69a11a7f2596b5f06
+run_name: unruly-perch-469
+run_uuid: a339d972a6b948a69a11a7f2596b5f06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725242951758
+status: 4
+tags: []
+user_id: swathilakhinana

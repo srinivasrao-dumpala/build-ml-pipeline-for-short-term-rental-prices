@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/var/folders/lv/7pqqcf_s36x401_s8kbz5zz40000gn/T/ipykernel_3498/3948784594.py", line 6, in <module>
+    run = wandb.run(project = "nyc_airbnb" , group = "modeling" , save_code = True)
+TypeError: 'Run' object is not callable

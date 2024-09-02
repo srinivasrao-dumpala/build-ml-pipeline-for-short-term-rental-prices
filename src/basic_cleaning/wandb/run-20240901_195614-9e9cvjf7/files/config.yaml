@@ -1,0 +1,32 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.31
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.19
+    t:
+      4: 3.9.19
+      5: 0.10.31
+      8:
+      - 5
+input_artifact:
+  desc: null
+  value: sample.csv:latest
+max_price:
+  desc: null
+  value: '350'
+min_price:
+  desc: null
+  value: '10'
+output_artifact:
+  desc: null
+  value: clean_sample.csv
+output_description:
+  desc: null
+  value: ' Bsaic Cleaning from sample data'
+output_type:
+  desc: null
+  value: clean_sample Data

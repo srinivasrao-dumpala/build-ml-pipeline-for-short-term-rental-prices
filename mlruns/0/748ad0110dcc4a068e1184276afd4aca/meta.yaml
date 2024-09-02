@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/748ad0110dcc4a068e1184276afd4aca/artifacts
+end_time: 1725236505201
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 748ad0110dcc4a068e1184276afd4aca
+run_name: bright-doe-931
+run_uuid: 748ad0110dcc4a068e1184276afd4aca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725236502714
+status: 4
+tags: []
+user_id: swathilakhinana

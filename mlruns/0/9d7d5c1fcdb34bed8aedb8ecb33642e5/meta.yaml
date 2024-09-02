@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/swathilakhinana/Desktop/build-ml-pipeline-for-short-term-rental-prices/mlruns/0/9d7d5c1fcdb34bed8aedb8ecb33642e5/artifacts
+end_time: 1725235777543
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9d7d5c1fcdb34bed8aedb8ecb33642e5
+run_name: dapper-seal-983
+run_uuid: 9d7d5c1fcdb34bed8aedb8ecb33642e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725235768245
+status: 3
+tags: []
+user_id: swathilakhinana
